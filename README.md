@@ -21,7 +21,7 @@ ln -s ~/path/to/.vimrc ~/.vimrc
 ```
 
 ## TODO
--[x] Add basic platform specific functionality
--[ ] Implement useful platform specific features
--[ ] Add a few plugins
--[ ] Test on Mac (add mac specific features)
+- [x] Add basic platform specific functionality
+- [ ] Implement useful platform specific features
+- [ ] Add a few plugins
+- [ ] Test on Mac (add mac specific features)
