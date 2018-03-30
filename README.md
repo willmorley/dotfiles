@@ -1,4 +1,4 @@
-#This is my vim setup
+# This is my vim setup
 This repo includes a basic vim setup that should help you get started with vim. Feel free to use this, but make sure you understand what each command does (my comments and :h are your friends :) )
 
 To use, clone this repo, copy the .vim to your home directory, then do one of the below steps.
