@@ -21,10 +21,15 @@ endif
 
 "=== Syntax === {{{
 syntax enable		" enable syntax processing
+
 if g:PLATFORM =~ "cygwin"
     colorscheme darkblue
 elseif g:PLATFORM =~ "mac"
-    colorscheme dark_eyes
+    colorscheme badwolf
+
+    let s:clang = '/usr/local/Cellar/clang-format/2018-01-11/share/clang/clang-format.py'
+    map <C-K> :pyf s:clang<cr> " use clang format
+    imap <C-K> <c-o>:pyf s:clang<cr> " TODO:add interdevice capabilities
 endif
 " }}}
 
