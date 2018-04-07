@@ -9,8 +9,10 @@ let s:path = expand('<sfile>:p:h')
 let s:config_path = s:path . '/.vim'
 if has('macunix') || system('uname') =~? 'Darwin'
     let g:PLATFORM = 'mac'
-elseif has('win32unix') || system('uname') =~? 'Linux'
+elseif has('win32unix')
     let g:PLATFORM = 'cygwin'
+elseif system('uname') =~? 'Linux'
+    let g:PLATFORM = 'linux'
 elseif has('win32') || has('win64')
     let g:PLATFORM = 'win'
     let s:config_path = s:path . '/vimfiles'
@@ -37,6 +39,7 @@ endif
 set tabstop=4 		" makes a tab 4 spaces
 set softtabstop=4	" number of spaces in tab when editing
 set expandtab		" makes tabs spaces (useful for languages like python)
+set modeline
 set modelines=1
 " }}}
 
